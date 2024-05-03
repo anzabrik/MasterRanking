@@ -93,15 +93,3 @@ Book titles, however, are treated differently: when Mary adds a second, third et
 Places in a ranked list are not unique: there can be two and more books of equal importance, and Mary will just give them the same place while adding books, and these books will have the same rating within the list.
 
 Other users can use the same titles as Mary, and this will not interfere with her rankings (her books, topics, lists are only hers).
-
-## Structure
-
-The main app is in the 'list' folder and follows the generic structure of a Django app, including:
-
-- folder 'static/list': styles.css, icons for 'edit', 'delete', 'search', images for logo and favicon
-- folder 'templates/list': 'base.html' + html files for every page
-- forms.py contains forms: MasterForm, ListForm, and two versions of BookForm (one for ranked lists, the other for lists where places do not matter)
-- models.py contains the following models: Master, List, Book, Author, Book-In-List, Book-In-Master, Author\_In\_List, Author\_In\_Topic
-- urls.py, where the paths are grouped depending on what model they refer to primarily (Book, List, Topic)
-- views.py, where the functions are grouped based on the typical workflow and also the model they refer to
-- admin.py, where models are registered
