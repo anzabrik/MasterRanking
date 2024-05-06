@@ -16,26 +16,6 @@ The person creates a topic and adds several book lists of their choice assigning
 
 The app does NOT impose choices: it's up to the person how they name the topic, what lists they include and what credibility score they give to each list. The person can delete/edit items, and the ranking will still work.
 
-## Distinctiveness and Complexity
-
-The very aim and functionality of the project does not in any way overlap with those of any of the previous projects. While this claim can be best supported by the video demo and the chapters 'Calculating The Ratings' and 'Using The App' further, we can mention the following features/facts as additional arguments:
-
-- a ranking method
-- 27 functions in the views.py file, which is 800+ lines long. In addition to the generic functions like login/register, there are quite a few ones that are unique to this project (e.g. 'list\_edit' or 'bil\_edit')
-- 8 distinctive models (in addition to User)
-- 4 main forms for user input (forms.py) plus multiple mini-forms for adding/editing items. In many cases, mini-forms are displayed and processed using JavaScript, and the simpler updates are displayed without reloading the page (like when MasterRanking name is changed)
-- 13 distinctive html templates, each essential for this project and its goals
-- Django FormSets to process multiple forms
-- Crispy Forms
-- user-friendly urls using slug+id (the id helps to get an item from the database, the slug is for the user)
-- success/error messages via the Django Messages framework
-- 23 paths
-- 'search' function to find all books, lists, topics, and authors with a matching string
-- admin interface
-- users cannot view, edit or delete other user's MasterRankings, lists or books (implemented via a set of UniqueConstraint's and filtering)
-
-Many of the features mentioned above were not present in the previous projects, whereas the figures hint that there is more going on here.
-
 ## Models
 
 **Master**: represents the whole topic (MasterRanking), in which lists will be later added. This is the first item user creates, in a typical flow.
