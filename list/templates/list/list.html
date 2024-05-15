@@ -7,6 +7,7 @@
 {% block body %}
 
 <div class="listProperties">
+    <p></p>
     <h1>{{ list }}
         <a class="btn btn-light" href="{% url 'list_edit' list.id list.slug %}" data-toggle="tooltip"
             data-placement="top" title="Edit list"> <img src="{% static 'list/edit.svg' %}" style="width: 16px;"></a>
@@ -15,7 +16,7 @@
             <img src="{% static 'list/delete.svg' %}" style="width: 16px;">
         </button>
     </h1>
-
+    <p></p>
     <p><strong>Credibility:</strong> {{ list.credibility }} out of 5</p>
     {% if list.places_matter %}
     <p><strong>This is a ranked list (the first book is the best)</strong></p>

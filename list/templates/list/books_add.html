@@ -4,11 +4,12 @@
 {% block title %}Add Books{% endblock %}
 
 {% block body %}
-
+<p></p>
 {% if not list.places_matter %}
 <div id="books-add">
 </div>
 {% endif %}
+
 <h3>Add books to list "{{ list }}",
     {% if list.masters.count == 1 %}
     which is in MasterRanking "{{ list.masters.first }}" </h3>

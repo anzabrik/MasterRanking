@@ -2,8 +2,9 @@
 
 {% block title %}What will you do now?{% endblock %}
 {% block body %}
-
+<p></p>
 <h2>You've just added books to the list "{{ list }}"</h2><br>
+<p></p>
 {% if list.masters.count == 1 %}
 <a class="btn btn-primary" href="{% url 'master' list.masters.first.id list.masters.first.slug %}">See the MasterRanking
     for

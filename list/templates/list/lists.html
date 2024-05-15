@@ -5,8 +5,9 @@
 {% block body %}
 
 {% if lists.count > 0 %}
-
+<p></p>
 <h1>All lists</h1>
+<p></p>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -30,7 +31,9 @@
 
 {% else %}
 <br>
+<p></p>
 <h1>You haven't created any lists yet!</h1><br>
+<p></p>
 <a class="btn btn-primary" href="{% url 'list_add' %}">Add a list</a>
 
 {% endif %}

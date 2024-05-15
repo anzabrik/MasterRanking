@@ -2,8 +2,9 @@
 {% load static %}
 {% block title %}{{ master }}{% endblock %}
 {% block body %}
-
+<p></p>
 <h1 id="master-name" data-masterid="{{ master.id }}">{{ master }}</h1>
+<p></p>
 <div id="master-btns">
     <a id="master-edit-btn" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="Change name">
         <img src="{% static 'list/edit.svg' %}" style="width: 16px;"></a>

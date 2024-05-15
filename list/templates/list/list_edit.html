@@ -5,9 +5,9 @@
 {% block title %}Edit list{% endblock %}
 
 {% block body %}
-
+<p></p>
 <h1>Editing list "{{ list }}"</h1>
-
+<p></p>
 {% crispy list_form %}
 <a class="btn btn-primary" href="{% url 'list' list.id list.slug %}">Edit or Delete Books</a>
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteListModal">
