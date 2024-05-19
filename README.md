@@ -1,7 +1,5 @@
 # MasterRanking: Django App that Calculates Top Books and Authors in a Topic Based on Lists Provided by User
 
-## Video Demo
-
 [Video Demo](https://youtu.be/4m2JK5gQPnw).
 
 ## Built With
